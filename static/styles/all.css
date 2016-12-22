@@ -1,0 +1,11 @@
+body{
+    /*把导航条（fix）位置留出来，防止下面的内容被覆盖*/
+    padding-top: 65px;
+}
+.navbar span{
+    cursor: pointer;
+}
+.navbar-text a{
+    color:#9d9d9d;
+    text-decoration: none;
+}

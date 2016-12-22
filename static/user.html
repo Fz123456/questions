@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+        <meta name="author" content="范珍">
+        <title>个人资料-智游问答</title>
+        <!--bootstrap 样式-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/all.css">
+    </head>
+    <body>
+        <!--导航条-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container navbar-text text-center">
+               <span id="goBack" class="glyphicon glyphicon-menu-left pull-left"></span>
+               个人资料
+            </div>
+        </nav>
+
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <!--文件类型  accept：支持的文件格式-->
+                    <input type="file"  name="photo" required accept=".jpg,.png" >
+                </div>
+                <button type="submit" class="btn btn-success form-control">上传头像</button>
+            </form>
+        </div>
+
+
+        <!--使用jquery 、 bootstrap-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="scripts/user.js"></script>
+    </body>
+</html>

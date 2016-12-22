@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+        <meta name="author" content="范珍">
+        <title>注册-智游问答</title>
+        <!--bootstrap 样式-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/all.css">
+    </head>
+    <body>
+        <!--导航条-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container navbar-text text-center">
+               <span id="goBack" class="glyphicon glyphicon-menu-left pull-left"></span>
+               注册
+            </div>
+        </nav>
+
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control"  placeholder="请输入昵称" name="petname" required pattern="[0-9a-zA-Z\u4e00-\u9fa5]{2,16}">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="请输入密码" name="password" required pattern="[0-9a-zA-Z]{6,16}">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="请再次输入密码"  required pattern="[0-9a-zA-Z]{6,16}">
+                </div>
+                <div class="checkbox">
+                    <input type="radio" name="isMale" value="male" checked> 先生 <br>
+                    <input type="radio" name="isMale" value="female"> 女士
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="请输入邮箱">
+                </div>
+                <div class="form-group">
+                    <select name="course" class="form-control">
+                        <option value="html5" selected>HTML5</option>
+                        <option value="css3">CSS3</option>
+                        <option value="javaScript">JavaScript</option>
+                        <option value="php">PHP</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success form-control">提交</button>
+            </form>
+        </div>
+
+        <!--模态框-->
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">智游教育</h4>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--使用jquery 、 bootstrap-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="scripts/register.js"></script>
+    </body>
+</html>
